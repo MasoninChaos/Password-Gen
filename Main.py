@@ -1,7 +1,7 @@
 import random
-#import pyperclip
+import pyperclip
 from dataclasses import dataclass
-#method = input("Is the user on the phone? (Y/N)")
+
 alphabet = ['a', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'l', 'm', 'o', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z']
 alphabetNato = ['Alpha', 'Delta', 'Echo', 'Foxtrot', 'Golf', 'Hotel', 'Indigo', 'Juliet', 'Lima', 'Mike', 'Oscar',  'Quebec', 'Romeo', 'Sierra', 'Tango', 'Victor', 'Whiskey', 'Xray', 'Yankee', 'Zulu']
 SpecialA = ['!', '£', '$','*']
@@ -9,7 +9,6 @@ SpecialANato = ['Exclamation Mark', 'Pound Sign', 'Dollar Sign','Asterisk']
 capitals = ['A', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'L', 'M', 'O', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'X', 'Y', 'Z']
 numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 NumbersNato = ['Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine']
-
 
 class CharecterB: 
     def __init__(self, lower, upper, nato): 
@@ -88,27 +87,11 @@ CharecterD("$", "Dollar Sign"),
 CharecterD("*", "Asterisk"),
 ]
 
-
-
-#randoma = random.choices(population= charactersA, k=7)
-#RandomB = random.choices(population= SpecialAN, k=1) 
-
-#RandomC = random.choices(population= capitals, k=1)
-#RandomD = random.choices(population=  NumbersA, k=2) 
-
-
 #Loop over each with new classes to build string 
 randomA = random.choices(population= charactersA, k=7)
 RandomB = random.choices(population= NumbersA, k=1) 
 RandomC = random.choices(population= SpecialAN, k=1)
-#RandomD = random.choices(population=  CharecterD, k=2)
-passwordtest = (randomA + RandomB + RandomC)
 
-#print(''.join(map(str, passwordtest))) 
-
-#pyperclip.copy(''.join(map(str, passwordtest)))
-#pyperclip.paste()
-#passwordtest
 
 #Generate hte password from the classes
 for c in randomA:
@@ -119,7 +102,7 @@ for c in RandomB:
 
 for c in RandomC:
     print(c.printSymbol(),end= "")
-print("   - ")
+print("   - ") 
 
 
 #Write out the password for the operator 
@@ -131,7 +114,3 @@ for c in RandomC:
     print(c.printSWritten(),end= " ")
 
 
-#print(passwordtest)
-
-
-#TEST TEST TEST
